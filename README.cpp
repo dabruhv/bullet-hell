@@ -4,6 +4,8 @@
 #include "Header.h"
 #include "SFML/Graphics.hpp"
 #include "missiles.h"
+#include "bullet.cpp"
+#include "bullet.h"
 
 using namespace std;
 
@@ -47,6 +49,7 @@ int main() {
         missiles.push_back(newMissile);
     }
 
+    vector <bullet> sus;
 
     //################### HOLD ONTO YOUR BUTTS, ITS THE GAME LOOP###############################################################
     while (screen.isOpen()) {//keep window open until user shuts it down
